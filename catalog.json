@@ -1,0 +1,204 @@
+{
+  "schema": 2,
+  "version": 1,
+  "generated_at": "2026-10-20T20:47:20Z",
+  "base_url": "https://lioilsources.github.io/hajanek-content/",
+  "tales": [
+    {
+      "id": "cervena-karkulka",
+      "title": "Červená Karkulka",
+      "age": "3+",
+      "setting": "les",
+      "ambient": "wind",
+      "free": true,
+      "scripts": [
+        {
+          "length_min": 10,
+          "path": "scripts/cervena-karkulka.10.md",
+          "sha256": "961c88ac925d6bdb8e9c7112bf8991d798fd81efb7413e2f84c0fc011b3d0fb3",
+          "bytes": 4650,
+          "est_duration_s": 649
+        }
+      ]
+    },
+    {
+      "id": "zlatovlaska",
+      "title": "Zlatovláska",
+      "age": "5+",
+      "setting": "more",
+      "ambient": "sea",
+      "free": true,
+      "scripts": [
+        {
+          "length_min": 10,
+          "path": "scripts/zlatovlaska.10.md",
+          "sha256": "72ca43bf435196267be0252f4bb58f77dfc6e8a636adca011df051c1e544e24c",
+          "bytes": 4779,
+          "est_duration_s": 632
+        }
+      ]
+    }
+  ],
+  "ambient": [
+    {
+      "id": "brown-noise",
+      "title": "Hnědý šum",
+      "path": "ambient/brown-noise.opus",
+      "duration_s": 60,
+      "bytes": 641249,
+      "sha256": "b73ea1589935ce77cd637b29ed92951b2b96f20c858925dfc388321e77712591",
+      "free": false,
+      "license": "vlastní syntéza",
+      "source": "ffmpeg anoisesrc"
+    },
+    {
+      "id": "fireplace",
+      "title": "Krb",
+      "path": "ambient/fireplace.opus",
+      "duration_s": 100,
+      "bytes": 1223971,
+      "sha256": "497e05e0715dc07dceb0c6f0b3186893a20ed2fc881b5c9ebdb99de0060f11a9",
+      "free": false,
+      "license": "CC0",
+      "source": "https://freesound.org/people/BonnyOrbit/sounds/484338/"
+    },
+    {
+      "id": "night-meadow",
+      "title": "Noční louka",
+      "path": "ambient/night-meadow.opus",
+      "duration_s": 100,
+      "bytes": 1137057,
+      "sha256": "1fbf2294caf6cacd19754753d25f96b1e1af08baf03b96688e7b192e4e1d65e4",
+      "free": false,
+      "license": "CC0",
+      "source": "https://freesound.org/people/hdfreema/sounds/333221/"
+    },
+    {
+      "id": "pink-noise",
+      "title": "Růžový šum",
+      "path": "ambient/pink-noise.opus",
+      "duration_s": 60,
+      "bytes": 644247,
+      "sha256": "d3bbbc80881ed127bcdecdb6c21081707064661e3ac8048ba19ad6da1831dc6f",
+      "free": true,
+      "license": "vlastní syntéza",
+      "source": "ffmpeg anoisesrc"
+    },
+    {
+      "id": "rain",
+      "title": "Déšť na střechu",
+      "path": "ambient/rain.opus",
+      "duration_s": 90,
+      "bytes": 1042948,
+      "sha256": "ab0e733e7c7c1fcda3a59c22cf89908babbd2e232e91a4bac0e021dc0b9ecaec",
+      "free": true,
+      "license": "CC0",
+      "source": "https://freesound.org/people/Metadex/sounds/235827/"
+    },
+    {
+      "id": "sea",
+      "title": "Moře",
+      "path": "ambient/sea.opus",
+      "duration_s": 100,
+      "bytes": 1025510,
+      "sha256": "e4436178e18f453e6dc7daa1e2530181a01d83040e6951e3bd1f7cd4bf0dcf33",
+      "free": true,
+      "license": "CC0",
+      "source": "https://freesound.org/people/pulswelle/sounds/339517/"
+    },
+    {
+      "id": "stream",
+      "title": "Potůček",
+      "path": "ambient/stream.opus",
+      "duration_s": 100,
+      "bytes": 1189322,
+      "sha256": "8d792dc7a6dd0b6a07e482d5a8b1dc0b36b18c12380e9455897e9592c4edfd7f",
+      "free": false,
+      "license": "CC0",
+      "source": "https://freesound.org/people/turbostream/sounds/220528/"
+    },
+    {
+      "id": "wind",
+      "title": "Vítr v korunách",
+      "path": "ambient/wind.opus",
+      "duration_s": 100,
+      "bytes": 1037375,
+      "sha256": "1ed7cf87576cbd2c28eff20aece8be28f69d219b44f983f99cb6ae6d264136fc",
+      "free": true,
+      "license": "CC0",
+      "source": "https://freesound.org/people/Anya_Media/sounds/523389/"
+    }
+  ],
+  "presets": [
+    {
+      "id": "plaz-vecer",
+      "title": "Pláž večer",
+      "layers": [
+        {
+          "ambient": "sea",
+          "volume": 0.8
+        },
+        {
+          "ambient": "night-meadow",
+          "volume": 0.25
+        }
+      ]
+    },
+    {
+      "id": "les-v-noci",
+      "title": "Les v noci",
+      "layers": [
+        {
+          "ambient": "wind",
+          "volume": 0.7
+        },
+        {
+          "ambient": "night-meadow",
+          "volume": 0.4
+        },
+        {
+          "ambient": "stream",
+          "volume": 0.2
+        }
+      ]
+    },
+    {
+      "id": "destivy-vecer",
+      "title": "Deštivý večer",
+      "layers": [
+        {
+          "ambient": "rain",
+          "volume": 0.75
+        },
+        {
+          "ambient": "fireplace",
+          "volume": 0.35
+        }
+      ]
+    },
+    {
+      "id": "u-krbu",
+      "title": "U krbu",
+      "layers": [
+        {
+          "ambient": "fireplace",
+          "volume": 0.7
+        },
+        {
+          "ambient": "brown-noise",
+          "volume": 0.2
+        }
+      ]
+    },
+    {
+      "id": "tichy-sum",
+      "title": "Tichý šum",
+      "layers": [
+        {
+          "ambient": "pink-noise",
+          "volume": 0.6
+        }
+      ]
+    }
+  ]
+}
